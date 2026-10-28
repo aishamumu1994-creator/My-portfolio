@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans">
+
+    <!-- 1. Navbar Section (Pure CSS Mobile Toggle using Checkbox + Peer) -->
+    <nav class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-indigo-600 tracking-tight">Aisha.mumu</span>
+                </div>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-slate-600 hover:text-indigo-600 font-medium transition">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-indigo-600 font-medium transition">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-indigo-600 font-medium transition">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-indigo-600 font-medium transition">Projects</a>
+                    <a href="#education" class="text-slate-600 hover:text-indigo-600 font-medium transition">Education</a>
+                    <a href="#contact" class="text-slate-600 hover:text-indigo-600 font-medium transition">Contact</a>
+                </div>
+
+                <!-- Hidden Checkbox for Mobile Toggle Menu -->
+                <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+                <!-- Mobile Menu Button Icon tied to the Checkbox -->
+                <label for="menu-toggle" class="md:hidden cursor-pointer p-2 text-slate-600 hover:text-indigo-600 selection:bg-transparent">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </label>
+
+                <!-- Mobile Dropdown Menu (Controlled using the pure CSS peer selector) -->
+                <div class="hidden peer-checked:block absolute top-16 left-0 w-full bg-white border-t border-slate-100 px-4 pt-2 pb-4 space-y-1 shadow-lg md:hidden">
+                    <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Home</a>
+                    <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">About</a>
+                    <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Skills</a>
+                    <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Projects</a>
+                    <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Education</a>
+                    <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-indigo-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section -->
+    <header id="home" class="pt-24 min-h-screen flex items-center bg-gradient-to-br from-slate-50 to-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <span class="text-sm font-semibold tracking-wider text-indigo-600 uppercase bg-indigo-100 px-3 py-1 rounded-full">Welcome to my space</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 mt-4 leading-tight">
+                    Hi, I'm <span class="text-indigo-600">Aisha Siddika</span>
+                </h1>
+                <p class="text-xl text-slate-600 font-medium mt-2">Frontend Developer & Designer</p>
+                <p class="text-base text-slate-500 mt-4 max-w-md mx-auto md:mx-0">
+                    I build fast, responsive, and beautifully interactive modern websites using clean code architectures.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#projects" class="bg-indigo-600 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition text-center">View Projects</a>
+                    <a href="#contact" class="bg-white border border-slate-200 text-slate-700 font-medium px-6 py-3 rounded-lg hover:bg-slate-50 transition text-center">Contact Me</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-8 border-white shadow-xl">
+                    <img src="/src/IMG_20190527_170253.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">About Me</h2>
+            <div class="h-1 w-16 bg-indigo-600 mx-auto mt-4 rounded"></div>
+            <p class="mt-8 text-lg text-slate-600 leading-relaxed">
+                I am a passionate tech enthusiast currently diving deep into modern web architectures. My design philosophy revolves around clean layouts, rich micro-interactions, and flawless usability structures across all display ecosystems.
+            </p>
+            <p class="mt-4 text-base text-slate-500 leading-relaxed">
+                Right now, my learning roadmap is geared towards learning fullstack JavaScript infrastructures. Outside of coding, I spend time exploring digital user behaviors and working on open-source web initiatives.
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. Skills Section -->
+    <section id="skills" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Technical Skills</h2>
+                <div class="h-1 w-16 bg-indigo-600 mx-auto mt-4 rounded"></div>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-slate-100 hover:shadow-md transition">
+                    <div class="text-xl font-bold text-slate-800">HTML5</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-slate-100 hover:shadow-md transition">
+                    <div class="text-xl font-bold text-slate-800">CSS3</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-slate-100 hover:shadow-md transition">
+                    <div class="text-xl font-bold text-slate-800">Tailwind</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-slate-100 hover:shadow-md transition">
+                    <div class="text-xl font-bold text-slate-800">JavaScript</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-slate-100 hover:shadow-md transition">
+                    <div class="text-xl font-bold text-slate-800">Git</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm text-center border border-slate-100 hover:shadow-md transition">
+                    <div class="text-xl font-bold text-slate-800">GitHub</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 5. Projects / প্রজেক্টসমূহ -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">My Projects</h2>
+                <div class="h-1 w-16 bg-indigo-600 mx-auto mt-4 rounded"></div>
+            </div>
+            <!-- Responsive Projects Grid Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-slate-100 flex flex-col hover:shadow-lg transition">
+                    <img src="/src/p-1.jpg" alt="E-Commerce Project Preview" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-slate-900">E-Commerce Landing Page</h3>
+                        <p class="text-slate-600 text-sm mt-2 flex-grow">A high-conversion landing page variant constructed entirely with clean semantic HTML and custom functional Tailwind utility layouts.</p>
+                        <div class="mt-6 flex justify-between gap-4">
+                            <a href="#" class="text-center bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition w-1/2">Live Demo</a>
+                            <a href="#" class="text-center bg-slate-100 text-slate-700 text-xs font-semibold px-4 py-2 rounded hover:bg-slate-200 transition w-1/2">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-slate-100 flex flex-col hover:shadow-lg transition">
+                    <img src="/src/p-2.jpg" alt="Task Manager Dashboard Preview" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-slate-900">Task Manager Dashboard</h3>
+                        <p class="text-slate-600 text-sm mt-2 flex-grow">A sleek web interface showcasing grid allocations, deep container responsive shifts, and customized light/dark aesthetic systems.</p>
+                        <div class="mt-6 flex justify-between gap-4">
+                            <a href="#" class="text-center bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition w-1/2">Live Demo</a>
+                            <a href="#" class="text-center bg-slate-100 text-slate-700 text-xs font-semibold px-4 py-2 rounded hover:bg-slate-200 transition w-1/2">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md border border-slate-100 flex flex-col hover:shadow-lg transition">
+                    <img src="/src/p-3.jpg" alt="Weather Client Preview" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-slate-900">Weather API Client</h3>
+                        <p class="text-slate-600 text-sm mt-2 flex-grow">A single-page utility tool optimized with clean grid layouts to display comprehensive regional weather conditions instantly.</p>
+                        <div class="mt-6 flex justify-between gap-4">
+                            <a href="#" class="text-center bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded hover:bg-indigo-700 transition w-1/2">Live Demo</a>
+                            <a href="#" class="text-center bg-slate-100 text-slate-700 text-xs font-semibold px-4 py-2 rounded hover:bg-slate-200 transition w-1/2">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Education / শিক্ষাগত যোগ্যতা -->
+    <section id="education" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Education</h2>
+                <div class="h-1 w-16 bg-indigo-600 mx-auto mt-4 rounded"></div>
+            </div>
+            <!-- Education Card 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:shadow-md transition">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">M.Sc. in Computer Science & Engineering</h3>
+                    <p class="text-indigo-600 text-sm font-medium">International Islamic University Chittagong</p>
+                </div>
+                <span class="text-xs bg-indigo-50 text-indigo-700 font-semibold px-3 py-1 rounded-full whitespace-nowrap">2020 - 2022</span>
+            </div>
+            <!-- Education Card 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:shadow-md transition">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">B.Sc. in Computer Science & Engineering</h3>
+                    <p class="text-indigo-600 text-sm font-medium">International Islamic University Chittagong</p>
+                </div>
+                <span class="text-xs bg-indigo-50 text-indigo-700 font-semibold px-3 py-1 rounded-full whitespace-nowrap">2014 - 2019</span>
+            </div>
+            <!-- Education Card 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 hover:shadow-md transition">
+                <div>
+                    <h3 class="text-lg font-bold text-slate-900">Advanced Frontend Development Certification</h3>
+                    <p class="text-indigo-600 text-sm font-medium">Web Dev Academy Online</p>
+                </div>
+                <span class="text-xs bg-indigo-50 text-indigo-700 font-semibold px-3 py-1 rounded-full whitespace-nowrap">2026 (6 Months)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact / যোগাযোগ -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Details -->
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Get In Touch</h2>
+                <div class="h-1 w-16 bg-indigo-600 mt-4 rounded"></div>
+                <p class="mt-6 text-slate-600 leading-relaxed">
+                    Have an interesting project idea, optimization requirement, or just want to connect over software engineering topics? Drop me a direct message!
+                </p>
+                <div class="mt-8 space-y-4">
+                    <p class="text-slate-600 flex items-center gap-3">
+                        <span class="font-bold text-slate-900">Email:</span> aisha.mumu@example.com
+                    </p>
+                    <div class="flex gap-4 pt-2">
+                        <a href="https://linkedin.com" target="_blank" class="text-indigo-600 hover:text-indigo-700 font-medium transition">LinkedIn</a>
+                        <a href="https://github.com" target="_blank" class="text-indigo-600 hover:text-indigo-700 font-medium transition">GitHub</a>
+                        <a href="https://twitter.com" target="_blank" class="text-indigo-600 hover:text-indigo-700 font-medium transition">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form Design -->
+            <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100">
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-xs font-semibold uppercase text-slate-600 tracking-wider">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 w-full bg-white border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-xs font-semibold uppercase text-slate-600 tracking-wider">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 w-full bg-white border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-xs font-semibold uppercase text-slate-600 tracking-wider">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 w-full bg-white border border-slate-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-indigo-500 transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white font-medium text-sm py-3 rounded-lg shadow hover:bg-indigo-700 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer / ফুটার -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-xl font-bold text-white tracking-tight">Aisha.mumu</span>
+                <p class="text-xs text-slate-500 mt-1">&copy; 2026 Aisha Siddika. All rights reserved.</p>
+            </div>
+            <!-- Navigation Links -->
+            <div class="flex flex-wrap justify-center gap-6 text-sm">
+                <a href="#home" class="hover:text-white transition">Home</a>
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+
+</body>
+</html>
